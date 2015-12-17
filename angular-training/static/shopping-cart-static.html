@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Main page</title>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+    <style>
+      body {
+        padding-top: 60px;
+        padding-bottom: 20px;
+      }      
+    </style>
+  </head>  
+  <body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">La Garantía Soy Yo</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="shopping-cart-static.html" role="button">
+                <i class="glyphicon glyphicon-shopping-cart"></i> <span class="badge">2</span>
+              </a>
+            </li>
+          </ul>        
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+    <div class="container">
+      
+      <div class="row ">
+        <h2>Meu carrinho</h2>
+      </div>
+      
+      <div class="row">
+          
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>              
+                <th class="col-xs-6">Produto</th>
+                <th class="col-xs-2">Quantidade</th>
+                <th class="col-xs-2">Valor unitário</th>
+                <th class="col-xs-2">Valor total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="images/product1.jpg" style="width: 50px; height: 50px">&nbsp;
+                  <h4 style="display: inline"><small>Smartphone</small> Motorola Moto X Style Dual Chip</h4>
+                </td>
+                <td>
+                  <input type="number" value="1">
+                </td>
+                <td>
+                  R$ 2.499,00
+                </td>
+                <td>
+                  R$ 2.499,00
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/product7.jpg" style="width: 50px; height: 50px">&nbsp;
+                  <h4 style="display: inline"><small>Smart TV</small> LED 65'' LG Cinema 3D 65UB9500 Ultra HD</h4>
+                </td>
+                <td>
+                  <input type="number" value="1">
+                </td>
+                <td>
+                  R$ 7.749,00
+                </td>
+                <td>
+                  R$ 7.749,00
+                </td>
+              </tr>
+              <tr class="info">
+                <td colspan="3">
+                  Total
+                </td>
+                <td>
+                  R$ 10.248,00
+                </td>
+              <tr>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

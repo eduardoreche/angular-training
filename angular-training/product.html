@@ -1,0 +1,17 @@
+      <div class="row well">
+        
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img ng-src="images/{{product.image}}">
+          </div>
+        </div>
+         
+        <div class="col-xs-6">
+           <h3><small>{{product.category}}</small><br>{{product.description}}</h3>
+           <h4>{{product.price | currency : 'R$ ' : 2}} <small> or {{product.installments}}x of {{product.price/product.installments | currency : 'R$ ' : 2}}</small></h4>
+           <p>
+            <p><a href="" ng-click="addToShoppingCart(product)" class="btn btn-success" role="button"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart</a></p>
+           </p>
+        </div>
+      
+      </div>

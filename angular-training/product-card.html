@@ -1,0 +1,13 @@
+﻿            <div class="thumbnail">
+              <a href="" ng-click="viewProduct(product)">
+                <img ng-src="images/{{product.image}}"> 
+              </a>
+              <div class="caption">
+                <h3><small>{{product.category}}</small><br>{{product.description}}</h3>
+                <p>
+                  {{product.price | currency : 'R$ ' : 2}} <br>
+                  <small>or {{product.installments}}x of {{(product.price/product.installments) | currency : 'R$ ' : 2}}</small>
+                </p>
+                <p><a href="" ng-click="addToShoppingCart(product)" class="btn btn-success" role="button"><i class="glyphicon glyphicon-shopping-cart"></i> Add to cart</a></p>
+              </div>
+            </div>

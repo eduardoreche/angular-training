@@ -1,0 +1,23 @@
+﻿body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+      
+.product-list div:first-child {
+  min-height: 50px;
+}      
+.product-list div:not(:first-child) {
+  min-height: 246px;
+}
+
+.table tr td {
+  vertical-align: middle !important;
+}
+
+.currency-col {
+  text-align: right;
+}
+
+.actions-col {
+  text-align: center;
+}
