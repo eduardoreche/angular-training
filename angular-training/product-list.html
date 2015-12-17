@@ -1,14 +1,14 @@
     <div class="row">
-         
-         
+
+
         <div class="product-list col-sm-12">
-          
+
           <div class="col-sm-12">
             <input type="text" class="form-control" placeholder="Search" ng-model="search">
           </div>
 
-          
-          <div class="col-sm-6 col-md-4" ng-repeat="product in products | filter:'description:search'">
+
+          <div class="col-sm-6 col-md-4" ng-repeat="product in products | filter:search">
             <product-card product='product'></product-card>
           </div>
 
